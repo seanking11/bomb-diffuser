@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-color: #222326;
+  color: #BA4423;
+  font-family: 'Roboto', sans-serif;
+}
+
+.progress {
+  background-color: #cd816c;
+}
+
+.progress .determinate {
+  background-color: #BA4423;
+}
+
+.progressCounter {
+  text-align: center;
+  font-size: 36px;
+}
+
+.square {
+  padding: 10px;
+  min-width: 250px;
+  height: 250px;
+  background: #474a50;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 250px;
+  font-size: 50px;
+  border-radius: 5px;
+}
+
+.background-img {
+  /*background: url('../img/background2.jpeg');*/
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.controller {
+  margin-top: 20px;
+  background: transparent;
+  border: .25px solid white;
+  color: transparent;
+}
+
+.controller:focus {
+  outline-color: #EFD9BF;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #303133;
+  box-shadow: 0 1px 0 0 #303133;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: 0.5s;
+}
+
+.target {
+  text-align: center;
+  font-size: 50px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bomb Disarmer</title>
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="progress">
+      <div class="determinate" style="width: 0%"></div>
+  </div>
+	<div class='progressCounter'>0/10</div>
+
+	<input type="text" class="controller" />
+	<div class="target"></div>
+	<div class="background-img">
+		<div class="square" id="timer">0:30</div>
+	</div>
+
+	<div class="overlay">
+		<video width="1500" height="844" id='bombVideo'>
+  		<source src="img/bomb.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<audio id="audioDing" src="audio/RightDing.mp3"></audio>
+	<audio id="explosionSound" src="audio/explosion.mp3"></audio>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
